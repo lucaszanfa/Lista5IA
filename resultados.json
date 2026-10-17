@@ -1,0 +1,564 @@
+{
+  "n": 891,
+  "sobreviventes": 342,
+  "ausentes": {
+    "survived": 0,
+    "pclass": 0,
+    "sex": 0,
+    "age": 177,
+    "sibsp": 0,
+    "parch": 0,
+    "fare": 0,
+    "embarked": 2,
+    "class": 0,
+    "who": 0,
+    "adult_male": 0,
+    "deck": 688,
+    "embark_town": 2,
+    "alive": 0,
+    "alone": 0
+  },
+  "colunas": 40,
+  "sha256": "81787d320d7f7b03df935e91de8bd19e11d45c5bbcab86ef4d4a76dc91b7d4f2",
+  "configuracoes": [
+    {
+      "suporte": 0.05,
+      "confianca": 0.7,
+      "itemsets": 6188,
+      "regras": 9475,
+      "uteis": 131
+    },
+    {
+      "suporte": 0.1,
+      "confianca": 0.7,
+      "itemsets": 4344,
+      "regras": 7690,
+      "uteis": 108
+    },
+    {
+      "suporte": 0.1,
+      "confianca": 0.8,
+      "itemsets": 4344,
+      "regras": 5055,
+      "uteis": 36
+    },
+    {
+      "suporte": 0.15,
+      "confianca": 0.8,
+      "itemsets": 3144,
+      "regras": 4247,
+      "uteis": 31
+    },
+    {
+      "suporte": 0.1,
+      "confianca": 0.9,
+      "itemsets": 4344,
+      "regras": 2691,
+      "uteis": 2
+    }
+  ],
+  "regras": [
+    {
+      "a": [
+        "Classe=1a",
+        "Sexo=Feminino"
+      ],
+      "b": [
+        "Sobreviveu=Sim"
+      ],
+      "n": 91,
+      "na": 94,
+      "suporte": 0.10213243546576879,
+      "confianca": 0.9680851063829787,
+      "lift": 2.5221164613661817
+    },
+    {
+      "a": [
+        "Sexo=Feminino",
+        "NÃO Classe=3a"
+      ],
+      "b": [
+        "Sobreviveu=Sim"
+      ],
+      "n": 161,
+      "na": 170,
+      "suporte": 0.18069584736251404,
+      "confianca": 0.9470588235294117,
+      "lift": 2.4673374613003096
+    },
+    {
+      "a": [
+        "Sexo=Feminino",
+        "NÃO Embarque=S"
+      ],
+      "b": [
+        "Sobreviveu=Sim"
+      ],
+      "n": 91,
+      "na": 109,
+      "suporte": 0.10213243546576879,
+      "confianca": 0.8348623853211009,
+      "lift": 2.175036214389184
+    },
+    {
+      "a": [
+        "Sexo=Feminino",
+        "Idade=23-40"
+      ],
+      "b": [
+        "Sobreviveu=Sim"
+      ],
+      "n": 104,
+      "na": 128,
+      "suporte": 0.11672278338945005,
+      "confianca": 0.8125,
+      "lift": 2.116776315789474
+    },
+    {
+      "a": [
+        "Sexo=Feminino",
+        "Familia=1-3"
+      ],
+      "b": [
+        "Sobreviveu=Sim"
+      ],
+      "n": 125,
+      "na": 155,
+      "suporte": 0.14029180695847362,
+      "confianca": 0.8064516129032258,
+      "lift": 2.101018675721562
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "Tarifa=<10"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 243,
+      "na": 272,
+      "suporte": 0.2727272727272727,
+      "confianca": 0.8933823529411765,
+      "lift": 1.4499156219864997
+    },
+    {
+      "a": [
+        "Idade=23-40",
+        "Tarifa=<10"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 167,
+      "na": 191,
+      "suporte": 0.18742985409652077,
+      "confianca": 0.8743455497382199,
+      "lift": 1.4190198266243241
+    },
+    {
+      "a": [
+        "Classe=3a",
+        "Sexo=Masculino"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 300,
+      "na": 347,
+      "suporte": 0.3367003367003367,
+      "confianca": 0.8645533141210374,
+      "lift": 1.4031275098029952
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Classe=1a"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 391,
+      "na": 455,
+      "suporte": 0.4388327721661055,
+      "confianca": 0.8593406593406593,
+      "lift": 1.3946676274545127
+    },
+    {
+      "a": [
+        "Tarifa=<10",
+        "NÃO Idade=18-22"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 205,
+      "na": 240,
+      "suporte": 0.23007856341189675,
+      "confianca": 0.8541666666666666,
+      "lift": 1.3862704918032787
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Familia=1-3"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 375,
+      "na": 440,
+      "suporte": 0.4208754208754209,
+      "confianca": 0.8522727272727273,
+      "lift": 1.3831967213114755
+    },
+    {
+      "a": [
+        "Tarifa=<10",
+        "Embarque=S"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 208,
+      "na": 245,
+      "suporte": 0.2334455667789001,
+      "confianca": 0.8489795918367347,
+      "lift": 1.37785212445634
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "Familia=Sozinho"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 347,
+      "na": 411,
+      "suporte": 0.3894500561167228,
+      "confianca": 0.8442822384428224,
+      "lift": 1.3702285509154002
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Tarifa=30-<100"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 397,
+      "na": 471,
+      "suporte": 0.44556677890011226,
+      "confianca": 0.8428874734607219,
+      "lift": 1.3679649159444505
+    },
+    {
+      "a": [
+        "Classe=2a",
+        "Sexo=Masculino"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 91,
+      "na": 108,
+      "suporte": 0.10213243546576879,
+      "confianca": 0.8425925925925926,
+      "lift": 1.3674863387978142
+    },
+    {
+      "a": [
+        "Tarifa=<10",
+        "NÃO Embarque=Q"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 236,
+      "na": 282,
+      "suporte": 0.2648709315375982,
+      "confianca": 0.8368794326241135,
+      "lift": 1.358214161144053
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Idade=0-17"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 433,
+      "na": 519,
+      "suporte": 0.48597081930415265,
+      "confianca": 0.8342967244701349,
+      "lift": 1.3540225528285796
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Embarque=C"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 402,
+      "na": 482,
+      "suporte": 0.4511784511784512,
+      "confianca": 0.8340248962655602,
+      "lift": 1.3535813890211552
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "Embarque=S"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 364,
+      "na": 441,
+      "suporte": 0.40852974186307517,
+      "confianca": 0.8253968253968254,
+      "lift": 1.3395784543325526
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "Idade=23-40"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 282,
+      "na": 342,
+      "suporte": 0.3164983164983165,
+      "confianca": 0.8245614035087719,
+      "lift": 1.3382226056945643
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Tarifa=10-<30"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 326,
+      "na": 397,
+      "suporte": 0.3658810325476992,
+      "confianca": 0.8211586901763224,
+      "lift": 1.332700169302556
+    },
+    {
+      "a": [
+        "Classe=3a",
+        "Idade=23-40"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 205,
+      "na": 250,
+      "suporte": 0.23007856341189675,
+      "confianca": 0.82,
+      "lift": 1.3308196721311476
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Tarifa=100+"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 456,
+      "na": 558,
+      "suporte": 0.5117845117845118,
+      "confianca": 0.8172043010752689,
+      "lift": 1.3262823902696987
+    },
+    {
+      "a": [
+        "Tarifa=<10",
+        "NÃO Idade=0-17"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 257,
+      "na": 316,
+      "suporte": 0.2884399551066218,
+      "confianca": 0.8132911392405063,
+      "lift": 1.3199315210624611
+    },
+    {
+      "a": [
+        "Sexo=Masculino"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 468,
+      "na": 577,
+      "suporte": 0.5252525252525253,
+      "confianca": 0.8110918544194108,
+      "lift": 1.3163621899593716
+    },
+    {
+      "a": [
+        "Classe=3a",
+        "Embarque=S"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 286,
+      "na": 353,
+      "suporte": 0.32098765432098764,
+      "confianca": 0.8101983002832861,
+      "lift": 1.3149119955417268
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Idade=41+"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 386,
+      "na": 477,
+      "suporte": 0.4332210998877666,
+      "confianca": 0.8092243186582809,
+      "lift": 1.3133312712650789
+    },
+    {
+      "a": [
+        "Classe=3a",
+        "NÃO Familia=1-3"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 305,
+      "na": 378,
+      "suporte": 0.34231200897867564,
+      "confianca": 0.8068783068783069,
+      "lift": 1.3095238095238095
+    },
+    {
+      "a": [
+        "Tarifa=<10",
+        "NÃO Embarque=C"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 241,
+      "na": 299,
+      "suporte": 0.27048260381593714,
+      "confianca": 0.8060200668896321,
+      "lift": 1.3081309282307145
+    },
+    {
+      "a": [
+        "Tarifa=<10",
+        "Familia=Sozinho"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 250,
+      "na": 311,
+      "suporte": 0.28058361391694725,
+      "confianca": 0.8038585209003215,
+      "lift": 1.304622845395604
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Classe=2a"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 377,
+      "na": 469,
+      "suporte": 0.42312008978675647,
+      "confianca": 0.8038379530916845,
+      "lift": 1.3045894648537175
+    },
+    {
+      "a": [
+        "Tarifa=<10",
+        "NÃO Familia=4+"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 269,
+      "na": 335,
+      "suporte": 0.30190796857463525,
+      "confianca": 0.8029850746268656,
+      "lift": 1.303205285050159
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Familia=4+"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 440,
+      "na": 548,
+      "suporte": 0.49382716049382713,
+      "confianca": 0.8029197080291971,
+      "lift": 1.3030991982768938
+    },
+    {
+      "a": [
+        "Sexo=Masculino",
+        "NÃO Embarque=Q"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 430,
+      "na": 536,
+      "suporte": 0.4826038159371493,
+      "confianca": 0.8022388059701493,
+      "lift": 1.3019941277220457
+    },
+    {
+      "a": [
+        "Tarifa=<10",
+        "NÃO Familia=1-3"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 250,
+      "na": 312,
+      "suporte": 0.28058361391694725,
+      "confianca": 0.8012820512820513,
+      "lift": 1.3004413619167718
+    },
+    {
+      "a": [
+        "Tarifa=<10"
+      ],
+      "b": [
+        "Sobreviveu=Não"
+      ],
+      "n": 269,
+      "na": 336,
+      "suporte": 0.30190796857463525,
+      "confianca": 0.8005952380952381,
+      "lift": 1.2993266978922717
+    }
+  ]
+}
