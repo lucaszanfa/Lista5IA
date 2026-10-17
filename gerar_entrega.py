@@ -286,11 +286,21 @@ par('A imputação pode deslocar idades entre faixas. As escolhas de discretiza�
 par('Os filtros reduzem regras triviais e duplicadas, mas não eliminam toda redundância. As 36 regras estão integralmente nas páginas 6–7 e no arquivo CSV.')
 space()
 linha('Notebook comentado e executado',14,True)
-linha('Abrir notebook no GitHub (clique aqui)',11.5,True)
 notebook_url = 'https://github.com/lucaszanfa/Lista5IA/blob/main/Lista5_resolvida.ipynb'
-c.linkURL(notebook_url, (65,y+17,W-35,y+39), thickness=0)
-linha('https://github.com/lucaszanfa/Lista5IA/',10)
-linha('blob/main/Lista5_resolvida.ipynb',10)
+link_top = y + 16
+linha('Abrir notebook no GitHub (clique aqui)',11.5,True)
+# Endereço inteiro em uma única operação de texto: permite selecionar/copiar
+# e reconhecer a URL em leitores que ignoram as anotações do PDF.
+c.setFillColor(AZUL)
+c.setFont('Mao', 9)
+c.drawString(68, y, notebook_url)
+url_width = pdfmetrics.stringWidth(notebook_url, 'Mao', 9)
+c.setStrokeColor(AZUL)
+c.setLineWidth(.6)
+c.line(68, y - 3, 68 + url_width, y - 3)
+c.linkURL(notebook_url, (65, y - 8, W - 35, link_top),
+          relative=0, thickness=0)
+y -= 23
 par('O notebook está disponível publicamente no endereço acima, com código comentado, saídas executadas e uma cópia incorporada da base.',11)
 space()
 linha('Fonte dos dados (link)',13,True)
